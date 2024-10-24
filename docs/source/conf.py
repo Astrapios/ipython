@@ -112,7 +112,7 @@ try:
     )
 
 except ModuleNotFoundError:
-    # In case intersphinx_registry is not yet packages on current plaform
+    # In case intersphinx_registry is not yet packages on current platform
     # as it is quite recent.
     print("/!\\ intersphinx_registry not installed, relying on local mapping.")
     intersphinx_mapping = config["intersphinx_mapping"]
@@ -131,7 +131,6 @@ warning_is_error = config["numpydoc"]["warning_is_error"]
 
 # Options for HTML output
 # -----------------------
-html_theme_path = [sphinx_rtd_theme.get_html_theme_path()]
 # - html_theme
 # - html_static_path
 #     Add any paths that contain custom static files (such as style sheets) here,
